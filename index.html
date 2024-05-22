@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra's Algorithm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+<body>
+    <h1>Dijkstra's Algorithm</h1>
+    <div id="input-container">
+        <div class="column">
+            <label for="weight1-2">Weight from Graph 1 to Graph 2:</label>
+            <input type="text" id="weight1-2" placeholder="Weight 1">
+        </div>
+        <div class="column">
+            <label for="weight1-3">Weight from Graph 1 to Graph 3:</label>
+            <input type="text" id="weight1-3" placeholder="Weight 2">
+        </div>
+        <div class="column">
+            <label for="weight1-5">Weight from Graph 1 to Graph 5:</label>
+            <input type="text" id="weight1-5" placeholder="Weight 3">
+        </div>
+        <div class="column">
+            <label for="weight2-4">Weight from Graph 2 to Graph 4:</label>
+            <input type="text" id="weight2-4" placeholder="Weight 4">
+        </div>
+        <div class="column">
+            <label for="weight3-4">Weight from Graph 3 to Graph 4:</label>
+            <input type="text" id="weight3-4" placeholder="Weight 5">
+        </div>
+        <div class="column">
+            <label for="weight4-6">Weight from Graph 4 to Graph 6:</label>
+            <input type="text" id="weight4-6" placeholder="Weight 6">
+        </div>
+        <div class="column">
+            <label for="weight5-6">Weight from Graph 5 to Graph 6:</label>
+            <input type="text" id="weight5-6" placeholder="Weight 7">
+        </div>
+    </div>
+    <button onclick="runDijkstra()">Run Dijkstra's Algorithm</button>
+    <button onclick="resetGraphs()">Reset Graphs</button>
+    <div class="graph-container"></div>
+    <div id="output-container">
+        <div id="shortest-paths"></div>
+    </div>
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>

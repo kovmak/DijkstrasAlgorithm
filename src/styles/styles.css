@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.column {
+    flex: 1 1 200px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+#graph-input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+
+.graph-container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#shortest-paths {
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
